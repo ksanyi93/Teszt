@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-center</title>
+    <link rel="stylesheet" href="g-center.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="left"></div>
+        <h1>Champions Gokart Center</h1>
+        <div class="right"></div>
+    </header>
+    
+<!-- Háttérkép,text-shaodw,más font-family,középre igazítás -->
+<nav>
+    <a href="#" class="icon"><i class="fa fa-bars fa-2x"></i></a>
+    
+    <!-- esetleg az egész bootstrappel!? -->
+    <a href="index.html">Bemutatkozás</a>
+    <a href="arak.html">Árak</a> <!-- dives felsorolás!!! -->
+    <a href="palya.html">Pálya</a> <!-- kép beillesztése+pár adat(hány kanyar,legjobb idő) -->
+    <a href="#">Online foglalás</a> <!-- lehetne egy táblázat,ami online mutatja a foglalt/szabad stb. időpontokat
+    megjegyzésekkel: 1. külsős program - szürke
+    2. foglalt - piros
+    3. szabad - zöld
+    4. bajnokság - sárga/kék
+ -->
+    <a href="#">Galéria</a> <!-- bootstrap használatával -->
+    <a href="kapcsolat.html">Kapcsolat</a> <!-- itt lehetne üzenetet írni: név,email megadásával,google térkép beillesztése -->
+    
+</nav> 
+    <!-- piros háttér,fekete betűk,focusnál fehér!, text-decoration:none
+    összehúzásra lenyíló menü, @media-t használni!! -->
+
+    <main>
+      
+        <h3 class="text-center">Árak</h3>
+
+        <div>
+            <ul id="prices">
+                <li>
+                    Felnőtt belépő <div>1000Ft</div>
+                </li>
+                <li>
+                    Gyermek belépő <div>2000Ft</div>
+                </li>
+                <li>
+                    Családi belépő <div>5000Ft</div>
+                </li>
+                <li>
+                    Egésznapos belépő <div>4000Ft</div>
+                </li>
+                <li>
+                    Félnapos belépő <div>6000Ft</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="top-right"><input type="date" name="date" id="date"></div>
+
+    </main>
+ 
+
+    <footer>
+        <p>@2021 Minden jog fenntartva. <a class="blink" href="#"><span>Ugrás az oldal tetejére</span> <i class="fa fa-arrow-circle-up fa-2x"></i></a> </p>
+    </footer><!-- ahogy az éttermesnél csináltam -->
+    <script src="scripts.js"></script>
+</body>
+</html>

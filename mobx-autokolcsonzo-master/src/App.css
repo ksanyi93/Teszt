@@ -1,0 +1,94 @@
+body{
+  background-image: url(./images/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.7em;
+}
+.container{
+  display: flex;
+  margin:0px 30px;
+  box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+table{
+  border-collapse: collapse;
+}
+#vehicles, #customers, #reserved_vehicles, #stats, .titles{
+  flex:1;
+}
+.titles{
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+  margin-top: 30px;;
+  padding-bottom: 20px;
+  text-shadow: 0 0 10px rgb(157, 255, 154);
+}
+#vehicles{
+  background-color: rgba(144, 238, 144, 0.8);
+}
+
+#customers{
+  background-color: rgba(173, 216, 230, 0.8);
+}
+
+#reserved_vehicles{
+  background-color: rgba(255, 192, 203, 0.8);
+}
+
+.stats{
+  position:fixed; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%; 
+  background:#800f0fe6; 
+  bottom:0; 
+  left:0; 
+  padding:10px; 
+  color:#fff;
+  box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+button{
+  margin:10px;
+
+}
+h1{
+  text-align: center;
+  font-family: 'Petit Formal Script', cursive;
+}
+
+.vehicleitem{
+  display: flex;
+  padding: 10px;
+}
+
+.vehicleitem div:first-child{
+  flex:1;
+}
+.vehicleitem div:last-child{
+  flex:1;
+  padding-left:10px;
+}
+.vehicleitem img{
+  width: 100%;
+}
+.vehicleitem:nth-child(odd), .useritem > div{
+  background-color: rgba(255,255,255,0.5);
+}
+
+details{
+  padding:10px;
+  cursor: pointer;
+  user-select: none;
+  ;
+}
+
+.useritem > div{
+  padding:10px 10px 10px 10px;
+  font-weight: bold;
+}
+details{
+  border-bottom: 1px grey solid;
+}

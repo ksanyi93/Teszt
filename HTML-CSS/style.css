@@ -1,0 +1,44 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+body{
+    background-color: yellow;
+}
+p{
+    background-image: url("images/Balna.jpg");
+}
+
+.zold{
+    background-color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    text-align: left;
+}
+
+#kiemelt{
+    border: brown;
+    background-color: teal;
+    text-align: right;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-small;
+    font-style: italic;
+}
+
+ul{
+    background-color: violet;
+    text-transform: capitalize;
+    text-shadow: black;
+    text-align: center;
+    font-weight: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    height: 120px;
+    width: 120px;
+}

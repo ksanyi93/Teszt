@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  display: table;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.btn-sml{
+  /* height: 15px;
+  width: 15px; */
+  text-align: center;
+  font-size: small;
+  border: 2px solid black;
+  text-align: center;
+  margin: 1px;
+}
+
+.btn-big{
+  /* height: 15px;
+  width: 15px; */
+  text-align: center;
+  font-size: large;
+  border: 2px solid black;
+  text-align: center;
+  margin: 1px;
+}
+
+.btn-huge{
+  /* height: 15px;
+  width: 15px; */
+  text-align: center;
+  font-size: x-large;
+  border: 2px solid black;
+  text-align: center;
+  margin: 1px;
+}
+
+.btn-basic{
+  /* height: 15px;
+  width: 15px; */
+  text-align: center;
+  font-size: medium;
+  border: 2px solid black;
+  text-align: center;
+  margin: 1px;
+}
+
+.btn-hide{
+  background-color: black;
+  color: rgb(31, 199, 31);
+  border: 3px solid rgb(100, 128, 0);
+  height: 25px;
+}
+
+.btn-show{
+  background-color: gray;
+  color: azure;
+  margin-left: 85%;
+  border: 3px solid purple;
+  height: 25px;
+}
+
+.btn-{
+  width: 3%;
+}
+
+.btn-plus{
+  width: 3%;
+}
+
+.btn-red{
+  
+  height: 15px;
+  width: 15px;
+}
+
+.btn-blue{
+  
+  height: 15px;
+  width: 15px;
+}

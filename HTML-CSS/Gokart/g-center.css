@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
+
+html, body{
+    margin:0;
+    padding: 0;
+    background: #000;
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: .93rem;
+    scroll-behavior: smooth;
+}
+
+h1{
+    margin: 0;
+    display: inline-block;
+    padding-top:33px;
+ 
+    color: #fff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.right{
+    float:right;
+    background-image: url(images/kisspng-kart-racing-electric-go-kart-kart-circuit-clip-art-go-cart-5b0ea91c3f2414.0350497415276874522586.png);
+    height: 100px;
+    width:100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+
+.left{
+ 
+    float:left;
+    background-image: url(images/kisspng-go-kart-kart-racing-kart-circuit-auto-racing-clip-5ae14cdd504966.3398572915247147173289.png);
+    height: 100px;
+    width:100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ 
+
+.left, .right{
+    margin:20px;
+}
+
+header{
+    text-align: center;
+    height: 100px;
+}
+
+nav{
+    background: steelblue;
+    padding:15px 0;
+    text-align: center;
+    overflow: auto;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 900;
+    display: inline-block;
+    padding: 5px 39px;
+
+}
+
+a:focus{
+    color: yellow;
+}
+
+
+main{
+    background:rgba(255,255,255,0.1);
+    padding: 20px 20px;
+    overflow: auto;
+    min-height: 70vh;
+    
+}
+
+main::first-letter{
+    font-size: xx-large;
+}
+
+.top-right{
+    position: fixed;
+    top:160px;
+    right: 17px;
+}
+
+.blink{
+    float:right;
+    color: lightgreen;
+    padding: 0;
+    font-size:90%;
+}
+
+footer > p{
+  margin-left:20px;
+  margin-right:20px;
+  padding-top: 25px;
+  
+}
+
+#prices{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#prices li div{
+    float:right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#prices{
+    list-style-type: none;
+    margin-top:30px;
+}
+
+#prices li{
+    line-height: 240%;
+    font-size: 110%;
+}
+
+.fa.fa-bars{
+    display: none;
+    margin-right: 10px;
+}
+.icon{
+    display: inline;
+}
+
+.fa-arrow-circle-up{
+    display: none!important;
+}
+
+@media(max-width: 1000px){
+    .left, .right{
+       display: none;
+    }
+
+    .fa.fa-bars{
+        display: block;
+        position: absolute;
+        right: 10px;
+ 
+    }
+
+    nav a:not(.icon){
+        display: none;
+        text-align: left;
+        border-bottom: 1px solid #ffffff40;
+    }
+    nav a:last-child{
+        border: none;
+
+    }
+
+    .mobil-menuitem{
+        display: block!important;
+    }
+
+    input[type="date"]{
+        display: none;
+    }
+
+    main img{
+        width: 100%;
+        margin:0px;
+        margin-bottom: 10px;
+        float: none;
+    }
+
+    .fa-arrow-circle-up{
+        display: block!important;
+    }
+
+    .blink > span{
+        display: none;
+    }
+
+    #prices{
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 800px){
+    .palya{
+        /* display: block;
+        margin-left: auto;
+        margin-right: auto; */
+        width: 100%!important;
+    }
+}
+
+
+.palya{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: white;
+    margin-top: 16px;
+}
+
+.adatok{
+    margin-left: 22px;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#container a:first-child{
+    margin-right: -30px;
+    z-index: 999;
+}
+
+#container a:last-child{
+    margin-left: -30px;
+    z-index: 999;
+}
+
+.images img:not(:first-child){
+    display: none;
+}

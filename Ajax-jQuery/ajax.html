@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+
+
+    <p></p>
+
+    <button class="home">Home</button>
+
+    <button class="about">About</button>
+
+    <button class="contact">Kapcsolatok</button>
+
+
+    <button class="get_btn">Kérés</button>
+
+    <script>
+
+        $(".home").click( function(){
+            $("p").load("demo_test.html #home")
+            /* window.location.hash = "#home" */
+        } )
+
+        $(".about").click( function(){
+            $("p").load("demo_test.html #about")
+            /* window.location.hash = "#about" */
+        } )
+
+        $(".contact").click( function(){
+            $("p").load("demo_test.html #contact")
+            /* window.location.hash = "#contact" */
+        } )
+
+
+        const hash = window.location.hash;
+        if ( hash)
+        $("p").load("demo_test.html "+hash);
+
+
+
+        $(".get_btn").click(function(){
+            $.get("demo.php", function(data, status){
+                alert("Data: " + data + "\nStatus: " + status);
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>

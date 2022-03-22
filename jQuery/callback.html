@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<script>
+
+    $(document).ready(function(){
+    $("button").click(function(){
+        $("#div-1").animate({left: '250px'}, 1500, function(){
+            $("#div-1").animate( {height: '300px'}, 1500)
+            $("#div-2").animate({left: '600px', height: '300px'}, 1500, function(){
+                $("div").animate( { width: '350px'}, 1500, function(){
+                    $("#div-2").animate( {left: '1200px'}, 1500, function(){
+                        $(this).animate( {left: '600px'}, 1500, function(){
+                            $("#div-1, #div-2").animate( {width: '100px', height: '100px'}, 1500, function(){
+                                $("#div-2").animate({ left: '350px', height: '100px', width: '100px'}, 1500, function(){
+                                    $("#div-1").animate({left: '0'}, 1500)
+                                })
+                            } )
+                        } )
+                    } )
+                })
+            })
+        });
+    });
+    });
+</script>
+
+
+    <button>Start Animation</button>
+
+    <hr>
+
+
+    <div id="div-1" style="background:#98bf21; height:100px; width:100px; position:absolute; left:0;"></div>
+
+    <div id="div-2" style="background:#e01009; height:100px; width:100px; position:absolute; left:350px;"></div>
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+<!-- $("button").click(function(){
+    $("div").animate({left: '250px'}, 1500, function(){
+        $(this).animate({height: "250px"}, 1500, function(){
+            $(this).animate({width: "250px"}, 1500, function(){
+                $(this).animate({right: "250px"}, 1500)
+            })
+        })
+    });
+}); -->
+</body>
+</html>

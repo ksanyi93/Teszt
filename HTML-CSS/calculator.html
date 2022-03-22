@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+
+    <div class="gombok">
+
+    <input type="text" id="display" value="">
+
+
+    <br>
+    <button class="szamok" onclick="beir(1)">1</button>
+    <button class="szamok" onclick="beir(2)">2</button>
+    <button class="szamok" onclick="beir(3)">3</button>
+
+    <button class="szamok" onclick="beir(4)">4</button>
+    <button class="szamok" onclick="beir(5)">5</button>
+    <button class="szamok" onclick="beir(6)">6</button>
+
+    <button class="szamok" onclick="beir(7)">7</button>
+    <button class="szamok" onclick="beir(8)">8</button>
+    <button class="szamok" onclick="beir(9)">9</button>
+
+    <button class="szamok" onclick="beir(0)">0</button>
+    <button class="szamok" onclick="beir('+')">+</button>
+    <button class="szamok" onclick="beir('-')">-</button>
+
+    <button class="szamok" onclick="beir('/')">/</button>
+    <button class="szamok" onclick="beir('*')">*</button>
+    <button class="szamok" onclick="torol()">C</button>
+
+    <button class="szamok" onclick="kiszamol()">=</button>
+
+    </br>
+
+    </div>
+
+    <script>
+        function kiszamol()
+        {
+
+            let my_input = document.getElementById('display');
+
+            let eredmeny = eval( my_input.value );
+
+            my_input.value= eredmeny;
+
+        }
+
+
+
+        function torol()
+        {
+            let my_input = document.getElementById('display');
+            my_input.value='';
+        }
+    
+
+        function beir(szam)
+        {
+          let my_input = document.getElementById('display');
+          
+          let eredeti_ertek = my_input.value;
+          my_input.value = eredeti_ertek + szam; //jsben a '+' jel összefűzést jelent
+        }
+    </script>
+    
+</body>
+</html>

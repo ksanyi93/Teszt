@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+input{
+    border-radius: 10px;
+    border: 1px solid orange;
+    font-size: medium;
+    margin: 6px;
+}
+
+button{
+    background-color: gray;
+    color: rgb(67, 192, 67);
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}

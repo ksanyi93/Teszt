@@ -1,0 +1,17 @@
+.col-lg-4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+  }
+  .bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+.utolso{
+    margin-top: 25px;
+}
+.lead{
+    font-style: italic;
+  }

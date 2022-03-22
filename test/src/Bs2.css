@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+#first_row{
+    padding-top: 5px;
+    border-bottom: 2px solid black;
+}
+
+.button{
+    background-color: white;
+    color: black;
+    margin-right: 3px;
+    padding: 3px 6px 3px 6px;
+}

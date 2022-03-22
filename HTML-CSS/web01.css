@@ -1,0 +1,75 @@
+body{
+    background: grey;
+    padding: 0;
+    margin: 0;
+    color: indigo;
+}
+
+header{
+    background: yellowgreen;
+    padding: 25px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    height: 350px;
+    text-align: center;
+}
+
+h1{
+    background: brown;
+    color: black;
+    max-width: 400px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 1px solid lightgreen;
+    margin: auto;
+}
+
+nav{
+    background: violet;
+    color: black;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    display: block;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+nav a:hover{
+    background: chocolate;
+    color: gray;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    background: wheat;
+    padding: 25px;
+}
+
+aside{
+    background: turquoise;
+    padding: 25px;
+}
+
+footer{
+    background: green;
+    padding: 25px;
+    height: 100px;
+}

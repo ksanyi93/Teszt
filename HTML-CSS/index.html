@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<style>
+		.cim{
+			text-align: center;
+			background: #F00;
+			margin: 20px 200px 20px 200px;
+			padding: 10px 10px;
+			border: 10px solid black;
+		}
+		.btn{
+			border: green ;
+			border-radius: 10%;
+			-webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 11px 14px 4px 20px rgba(0,0,0,0); 
+    		box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 11px 14px 4px 20px rgba(0,0,0,0);
+			font-size: xx-large;
+		}
+		div{
+			margin: 10px;
+			display: flex;
+		}
+		.data{
+			border: 5px solid purple;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: large;
+			background-color: rgb(128, 178, 182);
+			display: inline-block;
+		}
+		.szoveg{
+			width: 48%;
+			display: inline-block;
+		}
+		.kocka{
+			width: 48%;
+		}
+	</style>
+
+
+
+</head>
+<body style="box-sizing: border-box; background-image: url(images/Balna.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    
+
+    <h1 class="cim"> <strong>Helló Világ!</strong></h1>
+
+
+    <p style="border-radius: 50%; padding: 10px; font-size: xx-large; background-color: blue; color: orange; box-sizing: border-box;"><i>Írok</i> <u>ide</u> <strong>egy</strong> <small>paragrafust</small> .</p>
+
+    <button class="btn" onclick="myFunction()">Küldés</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML;
+          alert ("Szia!");
+        }
+        </script>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nwXY0II9-Mo" title="YouTube video player" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p><input type="datetime-local"></p>
+
+
+<table cellspacing=0 cellpadding=10 style="width: 80%;" border="3">
+	<tbody style="background: chocolate; margin: auto;">
+		<th style="text-align: center;">Ország-Város játék</th>
+		<tr>
+			<td style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: x-large; text-align: center;"><strong>Ország</strong></td>
+			<td style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: x-large; text-align: center;"><strong>Város</strong></td>
+			<td style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: x-large; text-align: center;"><strong>Folyó</strong></td>
+			<td style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: x-large; text-align: center;"><strong>Hegy</strong></td>
+		</tr>
+		<tr>
+			<td>Anglia</td>
+			<td>London</td>
+			<td>Tisza</td>
+			<td>Tátra</td>
+		</tr>
+		<tr>
+			<td>Franciaország</td>
+			<td>Párizs</td>
+			<td>Duna</td>
+			<td>Alpok</td>
+		</tr>
+		<tr>
+			<td>Magyarország</td>
+			<td>Budapest</td>
+			<td>Rába</td>
+			<td>Ural</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="color: #FFFFFF;
+    background: #333333;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00; display:inline-block;">Legyen ennek a szövegnek valami király árnyéka.</p>
+
+	<div>
+		<ul style="list-style-type: georgian; margin: 0; padding: 0; overflow: hidden;">
+			<li style="display: flex; padding: 5px; float: left; background-color: #dddddd;"><a style="font-size: 20px; background-color: black; color: green; padding: 9px 9px 9px 9px;" href="Home.html">Home</a></li>
+			<li style="display: flex; padding: 5px; float: left; background-color: #dddddd;"><a style="font-size: 20px; background-color: black; color: green; padding: 9px 9px;" href="#News">News</a></li>
+			<li style="display: flex; padding: 5px; float: left; background-color: #dddddd;"><a style="font-size: 20px; background-color: black; color: green; padding: 9px 9px 9px 9px;" href="#About">About</a></li>
+			<li style="display: flex; padding: 5px; float: left; background-color: #dddddd;"><a style="font-size: 20px; background-color: black; color: green; padding: 9px 9px 9px 9px;" href="#Contact">Contact</a></li>
+		</ul>
+	</div>
+
+	
+<fieldset class="data">
+	<legend><i> Adatok lekérése</i> </legend>
+	<label class="szoveg" for="knev"> <b><u>Keresztnév:</b></u> </label>
+	<input class="kocka" id="knev" type="text" placeholder="Írd be a keresztneved!" name="knev"><br><br>
+	<label class="szoveg" for="vnev"> <b><u>Vezetéknév:</b></u> </label>
+	<input class="kocka" id="vnev" type="text" placeholder="Írd be a vezetékneved!" name="vnev"><br><br>
+	<label class="szoveg" for="email"> <b><u>Email:</b></u> </label>
+	<input class="kocka" id="email" type="text" placeholder="Írd be az email címed!" name="email"><br><br>
+	<label class="szoveg" for="szuletes"> <b><u>Születés dátuma:</b></u> </label>
+	<input class="kocka" id="szuletes" type="date" name="szuletes"><br><br>
+	<input id="pipa" type="checkbox" name="elfogadas">
+	<label for="pipa">Elfogadom az adatkezelési szabályzatot.</label><br><br>
+	<input type="submit" value="Küldés">
+</fieldset>
+
+
+
+
+
+</body>
+</html>
