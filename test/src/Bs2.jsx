@@ -89,9 +89,9 @@ export default function Auto() {
                                     
                                 </select>
                                 <button onClick={()=>{
-                                    const foglalt = reserved
-                                    foglalt.push({user: item.id, vehic: state})
-                                    setReserved(foglalt)
+                                    
+                                    return setReserved([...reserved, {user: item.id, vehic: state}])
+                                
                                 }}>Kiválasztás</button>
                                 
                             </>
