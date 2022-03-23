@@ -76,13 +76,13 @@ export default function Auto() {
                             
 
                             return <>
-                                <p>{item.name} {item.id}</p>
+                                <p>{item.name}</p>
                                 <select onChange={(e)=>setState(e.target.value)} class="form-select" aria-label="Default select example">
                                     <option selected>Válassz járművet</option>
                                     
                                     {Vehicles.map(function(item,index){
                                         return <>
-                                        <option value={item.id}>{item.model} ({item.id})</option>
+                                        <option value={item.id}>{item.model}</option>
                                         
                                         </>
                                     })}
@@ -104,10 +104,21 @@ export default function Auto() {
 
                 <Col className='bg-info text-dark text-end'>
                     <div>
-                        {reserved.map(function(item, index){
+                        {reserved.map(function (item, index) {
+                            
+                            /* user adatai */
+                            const userindex = customer.findIndex(u => u.id == item.user)
+                            
+                            const user = customer[userindex]
+
+                            /* jármű adatai */
+                            const vehicleindex = Vehicles.findIndex(v => v.id == item.vehic)
+
+                            const cars = Vehicles[vehicleindex]
+
                             return <>
-                                <p>{item.user}</p>
-                                <p>{item.vehic}</p>
+                                 
+                                <Cars item={cars} user={user} handlereserved={setReserved} vehicleindex={vehicleindex} reserved={ reserved }/>
                             </>
                         })}
                     </div>
