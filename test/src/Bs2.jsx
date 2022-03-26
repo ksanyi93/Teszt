@@ -5,6 +5,7 @@ import Vehicles from './Vehicles';
 import Cars from './Cars';
 import { useState } from 'react';
 import Customers from './Customers';
+import { useEffect } from 'react';
 
 
 
@@ -12,33 +13,31 @@ import Customers from './Customers';
 export default function Auto() {
 
     const [customer, setCustomer] = useState([])
-
-    
     const[state, setState] = useState()
-
-
     const [reserved, setReserved] = useState([])
-
-
 
     const addUser = () => {
         const nev = prompt('Add meg a neved')
         /* setCustomer([nev]) */
-
-
         const user = {id: new Date().getTime(), name: nev};
-
         /* const user = customer.concat([nev]) */
         setCustomer(customer.concat([user]))
     }
 
-    
+    useEffect(() => {
+        console.log(reserved)
+    })
 
 
-    console.log(reserved)
+    const removeReserved = (userid) => {
 
+        const foglaltak = reserved;
+        
+        const foglaltindex = foglaltak.findIndex(f=>f.user == userid)
 
-
+        foglaltak.splice(foglaltindex, 1)
+        setReserved([...foglaltak]);
+    }
 
     return <>
         <Container fluid className='bg-body text-dark'>
@@ -72,8 +71,6 @@ export default function Auto() {
 
                     <div>
                         {customer.map(function (item, index) {
-
-                            
 
                             return <>
                                 <p>{item.name}</p>
@@ -118,7 +115,12 @@ export default function Auto() {
 
                             return <>
                                  
-                                <Cars item={cars} user={user} handlereserved={setReserved} vehicleindex={vehicleindex} reserved={ reserved }/>
+                                <Cars
+                                    item={cars} user={user}
+                                    handlereserved={removeReserved}
+                                    vehicleindex={vehicleindex}
+                                
+                                    reserved={reserved} />
                             </>
                         })}
                     </div>

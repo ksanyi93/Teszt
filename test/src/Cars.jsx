@@ -30,9 +30,10 @@ export default function Cars(props){
 {/* props.vehicleindex */}
             <p class="text-end my-3">
                 <button className="btn btn-danger" onClick={() => {
-                    props.handlereserved( props.reserved.splice(props.vehicleindex, 1 ) )
+ 
+                    props.handlereserved( props.user.id )
                 } }>
-                    Törlés
+                    Törlés { props.vehicleindex }
                 </button>
             </p>        
             
